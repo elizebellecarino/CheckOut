@@ -111,11 +111,13 @@ const styles = StyleSheet.create({
         width: '100%',
         borderColor: 'black',
         borderWidth: 1,
+        height: '70%'
     },
     expiresTextInput:{
         width: '50%',
         borderColor: 'black',
         borderWidth: 1,
+        height: '70%'
     },
     holder:{
         flex:4,

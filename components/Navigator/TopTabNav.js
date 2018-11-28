@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, Dimensions } from 'react-native';
 import { createMaterialTopTabNavigator } from 'react-navigation'
 import AddressScreen from '../screens/AddressScreen'
 import ShippingScreen from '../screens/ShippingScreen'
@@ -37,11 +37,16 @@ export default TopTabNavi = createMaterialTopTabNavigator({
               fontSize: 13,
               fontWeight: 'bold'
           },
+          indicatorStyle: {
+            marginLeft: Dimensions.get('window').width*.14,
+            backgroundColor: '#C09E67',
+            width:10,
+            height:10,
+            borderRadius:5
+          },
           activeTintColor: '#C09E67',
           inactiveTintColor: 'black',
         
-        indicatorStyle: {
-          backgroundColor: '#C09E67'
-        }
+       
       }
 })
